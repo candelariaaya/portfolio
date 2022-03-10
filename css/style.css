@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ruthie&display=swap');
 
 :root {
   --bg-black-900:#f2f2fc;
@@ -11,7 +11,7 @@
 body {
   line-height:1.5;
   font-size:16px;
-  font-family:'Poppins' sans-serif;
+  font-family:'Poppins', sans-serif;
 }
 
 * {
@@ -73,10 +73,34 @@ ul {
   padding:15px 20px;
   font-size:30px;
   letter-spacing:5px;
+  position:relative;
 }
 
 .aside .logo a span {
-  font-family:'Ruthie', regular;
+  font-family:'Ruthie', sans-serif;
+  font-size:40px;
+}
+
+.aside .logo a::before {
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  border-bottom:5px solid var(--skin-color);
+  border-left:5px solid var(--skin-color);
+  bottom:0;
+  left:0;
+}
+
+.aside .logo a::after {
+  content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  border-bottom:5px solid var(--skin-color);
+  border-left:5px solid var(--skin-color);
+  bottom:0;
+  left:0;
 }
 
 
