@@ -1,15 +1,4 @@
-:root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
-}
-
-/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Ruthie&display=swap');
 
 :root {
   --bg-black-900:#f2f2fc;
@@ -22,6 +11,7 @@
 body {
   line-height:1.5;
   font-size:16px;
+  font-family:'Poppins' sans-serif;
 }
 
 * {
@@ -40,7 +30,7 @@ ul {
   list-style:none;
 }
 
----- SECTION ---
+/* ---- SECTION --- */
 
 .section {
   background:var(-bg-black-900):
@@ -54,7 +44,7 @@ ul {
   z-index:0;
 }
 
----- ASIDE ---
+/* ---- ASIDE --- */
 
 .aside {
   width:270px;
@@ -76,30 +66,22 @@ ul {
   font-size:30px;
   text-transform:capitalize;
 }
-*/
 
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+.aside .logo a {
+  color:var(--text-black-900);
+  font-weight:700;
+  padding:15px 20px;
+  font-size:30px;
+  letter-spacing:5px;
 }
 
-/* Our remix on glitch button */
+.aside .logo a span {
+  font-family:'Ruthie', regular;
+}
+
+
+
+/* Our remix on glitch button 
 .btn--remix {
   font-family: HK Grotesk;
   padding: 0.75rem 1rem;
@@ -125,16 +107,6 @@ ul {
   background-color: #D0FFF1;
 }
 
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
 
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
@@ -154,57 +126,4 @@ a:not(.btn--remix):visited {
   padding: 0.5rem 1rem 1.5rem;
   white-space: nowrap;
 }
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
-body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
-}
-
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Very light scaling for our illustration */
-.title {
-  color: #2800FF;
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
-}
-
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
-}
-
-/* Subheading */
-h2 {
-  color: #2800FF;
-}
+*/
