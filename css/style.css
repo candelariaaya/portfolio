@@ -64,6 +64,15 @@ ul {
   position:relative;
 }
 
+.btn {
+  font-size:16px;
+  font-weight:500;
+  padding:12px 35px;
+  color:#ffff;
+  border-radius:40px;
+  background:var(--skin-color);
+}
+
 /* ---- ASIDE ---- */
 
 .aside {
@@ -98,7 +107,7 @@ ul {
 }
 
 .aside .logo a span {
-  font-family:'Ruthie', sans-serif;
+  font-family:'Ruthie';
   font-size:40px;
 }
 
@@ -204,6 +213,32 @@ ul {
 .home .home-info {
   flex:0 0 60%;
   max-width:60%;
+}
+
+h3.hello {
+  font-size:25px;
+}
+
+h3.hello span {
+  font-family:'Ruthie';
+  font-size:35px;
+  font-weight:700;
+  color:var(--skin-color);
+}
+
+h3.my-profession {
+  font-size:30px;
+  margin:15px 0;
+}
+
+.typing {
+  color:var(--skin-color);
+}
+
+.home-info p {
+  margin-bottom:70px;
+  font-size:20px;
+  color:var(--text-black-700);
 }
 
 .home .home-img {
