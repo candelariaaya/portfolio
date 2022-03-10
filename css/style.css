@@ -30,7 +30,7 @@ ul {
   list-style:none;
 }
 
-/* ---- SECTION --- */
+/* ---- SECTION ---- */
 
 .section {
   background:var(-bg-black-900):
@@ -40,11 +40,11 @@ ul {
   left:270px;
   top:0;
   right:0;
-  opacity:1;
   z-index:0;
+  opacity:1;
 }
 
-/* ---- ASIDE --- */
+/* ---- ASIDE ---- */
 
 .aside {
   width:270px;
@@ -165,11 +165,19 @@ ul {
   padding:5px 15px;
 }
 
-.aside .nav li a:active {
+.aside .nav li a.active {
   color:var(--skin-color);
 }
 
+.aside .nav li a i {
+  margin-right:15px;
+}
 
+/* ---- HOME ---- */
+
+.home .home-img img {
+  height:400px;
+}
 
 /* Our remix on glitch button 
 .btn--remix {
