@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 :root {
   --bg-black-900:#f2f2fc;
@@ -30,8 +30,11 @@ ul {
   list-style:none;
 }
 
+/* ---- MAIN CONTENT ----*/
 
-
+.main-content {
+  padding-left:270px;
+}
 
 /* ---- SECTION ---- */
 
@@ -113,7 +116,7 @@ ul {
 }
 
 .aside .logo a span {
-  font-family:'Ruthie';
+  font-family:'IM Fell DW Pica';
   font-size:40px;
 }
 
@@ -226,7 +229,7 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family:'Ruthie';
+  font-family:'IM Fell DW Pica';
   font-size:35px;
   font-weight:700;
   color:var(--skin-color);
