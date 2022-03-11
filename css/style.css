@@ -69,6 +69,7 @@ ul {
 .section-title {
   flex:0 0 100%;
   max-width:100%;
+  margin-bottom:60px;
 }
 
 .section-title h2 {
@@ -96,7 +97,7 @@ ul {
   position:absolute;
   top:100%;
   left:0;
-  margin-top:
+  margin-top:8px;
 }
 
 .row {
@@ -325,4 +326,32 @@ h3.my-profession {
   height:400px;
   margin:auto;
   border-radius:5px;
+}
+
+/* ---- ABOUT ---- */
+
+.about .about-content {
+  flex:0 0 100%;
+  max-width:100%;
+}
+
+.about .about-content .about-text {
+  flex:0 0 100%;
+  max-width:100%;
+}
+
+.about .about-content .about-text h3 {
+  font-size:24px;
+  margin-bottom:15px;
+  color:var(--text-black-900);
+  font-weight:700;
+}
+
+.about .about-content .about-text h3 span {
+  color:var(--skin-color);
+}
+
+.about .about-content .about-text p {
+  font-size:16px;
+  line-height:25px;
 }
