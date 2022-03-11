@@ -359,6 +359,7 @@ h3.my-profession {
   font-size:16px;
   line-height:25px;
   color:var(--text-black-700);
+  text-align:justify;
 }
 
 .about .about-content .personal-info {
@@ -629,4 +630,11 @@ h3.my-profession {
   color:var(--text-black-900);
   text-align:center;
   font-size:15px;
+  margin-bottom:60px;
+}
+
+.contact .contact-info-item {
+  flex:0 0 33.33%;
+  max-width:33.33%;
+  text-align:center;
 }
