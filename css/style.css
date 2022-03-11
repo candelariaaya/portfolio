@@ -399,8 +399,8 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item {
-  flex:0 0 30%;
-  max-width:30%;
+  flex:0 0 40%;
+  max-width:40%;
   margin-bottom:25px;
   margin-left:20px;
   display:grid;
@@ -414,4 +414,8 @@ h3.my-profession {
   color:var(--text-black-900);
   text-transform:capitalize;
   border-bottom:1px solid var(--skin-color);
+}
+
+.about .about-content .skills .skill-item h5 img {
+  margin-bottom:-10px;
 }
