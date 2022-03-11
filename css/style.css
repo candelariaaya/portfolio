@@ -471,7 +471,7 @@ h3.my-profession {
   background-color:var(--skin-color);
 }
 
-/*.about .about-content .timeline .circle-dot {
+.about .about-content .timeline .circle-dot {
   position:absolute;
   left:0;
   top:0;
@@ -479,7 +479,7 @@ h3.my-profession {
   width:15px;
   border-radius:50%;
   background-color:var(--skin-color);
-}*/
+}
 
 .about .about-content .timeline .timeline-date {
   font-weight:400;
