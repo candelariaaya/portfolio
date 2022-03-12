@@ -87,6 +87,7 @@ ul {
   position:absolute;
   top:100%;
   left:0;
+  transition:all 0.3s ease;
 }
 
 .section-title h2::after {
@@ -98,7 +99,30 @@ ul {
   top:100%;
   left:0;
   margin-top:8px;
+  transition:all 0.3s ease;
 }
+
+.section-title h2:hover::before {
+  content:'';
+  height:4px;
+  width:90px;
+  background-color:var(--skin-color);
+  position:absolute;
+  top:100%;
+  left:0;
+}
+
+.section-title h2:hover::after {
+  content:'';
+  height:4px;
+  width:60px;
+  background-color:var(--skin-color);
+  position:absolute;
+  top:100%;
+  left:0;
+  margin-top:8px;
+}
+
 
 .row {
   display:flex;
