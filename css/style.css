@@ -737,11 +737,15 @@ h3.my-profession {
     left:-270px;
   }
   .main-content {
-    padding-left:0;
+    padding-left:0;    
   }
   .about .about-content .personal-info .info-item p span {
     display:block;
     margin-left:0;
+  }
+  .home .home-info p,
+  .about .about-content .about-text p {
+    text-align:justify;
   }
 }
 
@@ -762,6 +766,12 @@ h3.my-profession {
 }
 
 @media (max-width:767px)  {
+  .contact .contact-form .col-6,
+  .contact .contact-info,
+  .portfolio .portfolio-item,
+  .service .service-item,
+  .about .about-content .education,
+  .about .about-content .experience,
   .about .about-content .skills,
   .about .about-content .personal-info {
     flex:0 0 100%;
