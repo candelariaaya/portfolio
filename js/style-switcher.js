@@ -1,4 +1,5 @@
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+
 styleSwitcherToggle.addEventListener("click", () => {
   document.querySelector(".style-switcher").classList.toggle("open");
 });
@@ -12,6 +13,7 @@ window.addEventListener("scroll", () => {
 
 // Theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
+
 function setActiveStyle(color) {
   alternateStyles.forEach((style) => {
     if(color === style.getAttribute("title")) {
@@ -21,3 +23,20 @@ function setActiveStyle(color) {
     }
   });
 }
+
+// Dark and light mode
+const dayNightMode = document.querySelector(".day-night");
+
+dayNightMode.addEventListener("click", () => {
+  dayNightMode.querySelector("i").classList.toggle("fa-sun");
+  dayNightMode.querySelector("i").classList.toggle("fa-moon");
+  document.body.classList.toggle("dark"); 
+})
+
+window.addEventListener("load", () => {
+  if(document.body.classList.contains("dark")) {
+    dayNightMode.querySelector("i").classList.add("fa-sun");
+  } else {
+    dayNightMode.querySelector("i").classList.add("fa-moon");
+  }
+});
