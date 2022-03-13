@@ -732,7 +732,7 @@ h3.my-profession {
   padding:0 50px;
 }
 
-@media(max-width:1199px) {
+@media (max-width:1199px) {
   .aside {
     left:-270px;
   }
@@ -742,5 +742,29 @@ h3.my-profession {
   .about .about-content .personal-info .info-item p span {
     display:block;
     margin-left:0;
+  }
+}
+
+@media (max-width:991px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .service .service-info {
+    flex:0 0 50%;
+    max-width:50%;
+  }
+  .home .home-info {
+    flex:0 0 100%;
+    max-width:100%;
+  }
+  .home .home-img {
+    display:none;
+  }
+}
+
+@media (max-width:767px)  {
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex:0 0 100%;
+    max-width:100%;
   }
 }
