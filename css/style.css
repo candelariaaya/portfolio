@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 :root {
-  --bg-black-900:#f2f2fc;
-  --bg-black-100:#fdf9ff;
-  --bg-black-50:#e8dfec;
-  --text-black-900:#302e4d;
-  --text-black-700:#504e70;
+  --bg-black-900:#EBEBF7;
+  --bg-black-100:#FAF3FD;
+  --bg-black-50:#EADEEF;
+  --text-black-900:#2D2B4B;
+  --text-black-700:#545373;
 }
 
 body.dark {
-  --bg-black-900:#151515;
-  --bg-black-100:#222222;
-  --bg-black-50:#393939;
-  --text-black-900:#ffffff;
-  --text-black-700:#e9e9e9;
+  --bg-black-900:#1F1E1E;
+  --bg-black-100:#201F1F;
+  --bg-black-50:#EAE8E8;
+  --text-black-900:#F9F4F4;
+  --text-black-700:#3E3D3D;
 }
 
 body {
@@ -47,7 +47,7 @@ ul {
 /* ---- SECTION ---- */
 
 .section {
-  background:var(-bg-black-900):
+  background:var(-bg-black-900);
   min-height:100vh;
   display:block;
   padding:0 30px;
@@ -167,8 +167,8 @@ ul {
   width:270px;
   background:var(--bg-black-100);
   position:fixed;
-  left: 0;
-  top: 0;
+  left:0;
+  top:0;
   padding:30px;
   height:100%;
   border-right:1px solid var(--bg-black-50);
