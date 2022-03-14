@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 :root {
-  --bg-black-900:#EBEBF7;
-  --bg-black-100:#FAF3FD;
+  --bg-black-900:#F4F4FC;
+  --bg-black-100:#FBFBFB;
   --bg-black-50:#EADEEF;
   --text-black-900:#2D2B4B;
   --text-black-700:#545373;
@@ -10,16 +10,17 @@
 
 body.dark {
   --bg-black-900:#1F1E1E;
-  --bg-black-100:#201F1F;
+  --bg-black-100:#434141;
   --bg-black-50:#EAE8E8;
   --text-black-900:#F9F4F4;
-  --text-black-700:#3E3D3D;
+  --text-black-700:#F6F7FC;
 }
 
 body {
   line-height:1.5;
   font-size:16px;
   font-family:'Poppins', sans-serif;
+  background-color:var(--bg-black-900);
 }
 
 * {
@@ -600,7 +601,7 @@ h3.my-profession {
   color:#ffffff;
 }
 
-.service .service-item .service-item-inner h4 {
+.service .service-item .service-item-inner .service-item-title {
   font-size:18px;
   margin-bottom:15px;
   color:var(--text--black-900);
