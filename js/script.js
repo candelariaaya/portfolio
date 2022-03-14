@@ -42,6 +42,13 @@ function showSection(element) {
   document.querySelector("#" + target).classList.add("active");
 }
 
+
+document.querySelector(".hire-me").addEventListener("click", function() {
+  showSection(this);
+  updateNav(this);
+});
+  
+
 const navTogglerBtn = document.querySelector(".nav-toggler");
 const aside = document.querySelector(".aside");
 
