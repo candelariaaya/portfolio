@@ -451,7 +451,7 @@ h3.my-profession {
   font-size:16px;
   color:var(--text-black-900);
   text-transform:capitalize;
-  border-bottom:1px solid var(--skin-color);
+  border-bottom:1px solid var(--bg-black-50);
 }
 
 .about .about-content .skills .skill-item h5 img {
@@ -739,6 +739,16 @@ h3.my-profession {
 
 .contact .contact-form .form-item textarea.form-control {
   height:140px;
+}
+
+.contact .contact-form .form-item textarea.form-control::placeholder {
+  color:var(--text-black-900);
+  font-family:'Poppins', sans-serif;
+}
+
+.contact .contact-form .form-item input.form-control::placeholder {
+  color:var(--text-black-900);
+  font-family:'Poppins', sans-serif;
 }
 
 .contact .contact-form .btn {
