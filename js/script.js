@@ -1,5 +1,5 @@
 // Typing animation
-var typed = new Typed(".typing", {
+const typed = new Typed(".typing", {
   strings:["","Web Designer", "Web Developer", "Front-End Developer"],
   typeSpeed:100,
   BackSpeed:60,
