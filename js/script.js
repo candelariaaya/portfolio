@@ -42,8 +42,14 @@ function showSection(element) {
   document.querySelector("#" + target).classList.add("active");
 }
 
+function updateNav(element) {
+  for(let i=0; i<totalNavList; i++) {
+    navList[i].querySelector("a").classList.remove("active");
+    const target = element.getAttribute("href").split("#")[1];
+  }
+}
 
-document.querySelector(".hire-me").addEventListener("click", function() {
+document.querySelector(".contact-me").addEventListener("click", function() {
   showSection(this);
   updateNav(this);
 });
