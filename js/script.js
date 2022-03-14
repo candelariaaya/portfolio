@@ -46,10 +46,15 @@ function updateNav(element) {
   for(let i=0; i<totalNavList; i++) {
     navList[i].querySelector("a").classList.remove("active");
     const target = element.getAttribute("href").split("#")[1];
+    if(target === navList[i].querySelector("a").getAttribute("href").split("#")[1]) {
+      navList[i].querySelector("a").classList.add("active");
+    }
   }
 }
 
 document.querySelector(".contact-me").addEventListener("click", function() {
+  const sectionIndex = this.getAttribute("data-section-index");
+  
   showSection(this);
   updateNav(this);
 });
