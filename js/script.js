@@ -16,13 +16,14 @@ const totalSection = allSection.length;
 
 for(let i=0; i<totalNavList; i++) {
   const a = navList[i].querySelector("a");
+  
   a.addEventListener("click", function() {
-    for(let i=0; i<totalSection; i++) {
-      allSection[i].classList.remove("back-section");
-    }
+    
+    removeBackSection();
+
       for(let j=0; j<totalNavList; j++) {
         if(navList[j].querySelector("a").classList.contains("active")) {
-          allSection[j].classList.add("back-section");
+          addBackSection(j);
         }
         navList[j].querySelector("a").classList.remove("active");
       }
@@ -32,6 +33,16 @@ for(let i=0; i<totalNavList; i++) {
       asideSectionTogglerBtn();
     }
   });
+}
+
+function removeBackSection() {
+  for(let i=0; i<totalSection; i++) {
+    allSection[i].classList.remove("back-section");
+  }
+}
+
+function addBackSection(num) {
+  allSection[num].classList.add("back-section");
 }
 
 function showSection(element) {
@@ -54,9 +65,10 @@ function updateNav(element) {
 
 document.querySelector(".contact-me").addEventListener("click", function() {
   const sectionIndex = this.getAttribute("data-section-index");
-  
   showSection(this);
   updateNav(this);
+  removeBackSection();
+  addBackSection(sectionIndex);
 });
   
 
