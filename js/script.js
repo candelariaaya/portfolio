@@ -97,6 +97,8 @@ function sendMail() {
      message : document.getElementById("formMessage").value
   }
   
+  const inputs = document.querySelectorAll('#formName, #formEmail, #formSubject, #formMessage');
+  
   if(!params.email_id || params.email_id === null) {
     return alert("Please email");
   }
@@ -106,10 +108,9 @@ function sendMail() {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
       .then(function(res) {
         alert("Thank you!");
-        function reset() {
-          params.forEach (params => {
-            params.value = '';
-          });
+        inputs.forEach (input => {
+          input.value = '';
+        });
         return console.log(res.status);
     });
   }
