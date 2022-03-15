@@ -99,14 +99,16 @@ function sendMail() {
 
   const inputs = document.querySelectorAll('input, textarea');
   
-  const msgError = document.getElementById("msg-error");
-  const msgOk = document.getElementById("msg-ok");
+  const alertError = document.getElementById("msg-error");
+  const alertOk = document.getElementById("msg-ok");
   
   if(!params.email_id || params.email_id === null) {
-    msgError.
+    return alertError.classList.remove("hidden");
+    closeAlert();
   }
   if(!params.message || params.message === null) {
-    return alert("Please message");
+    return alertError.classList.remove("hidden");
+    closeAlert();
   } else {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
       .then(function(res) {    
@@ -119,4 +121,7 @@ function sendMail() {
   }
 }
 
+function closeAlert() {
+  
+}
 
