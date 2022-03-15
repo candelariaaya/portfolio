@@ -98,6 +98,8 @@ function sendMail() {
   }
   emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
     .then(function(res) {
+      alert("Thank you!");
+      return console.log(res.status);
     
   });
 }
