@@ -699,6 +699,7 @@ h3.my-profession {
 }
 
 /* ---- CONTACT ---- */
+
 .contact-title {
   color:var(--skin-color);
   text-align:center;
@@ -800,7 +801,7 @@ h3.my-profession {
   cursor:pointer;
 }
 
-/*  */
+/* Alert Message - Contact Form */
 
 .alert {
   background:#ffdb9b;
@@ -843,7 +844,20 @@ h3.my-profession {
   animation:show_slide 1s ease forwards;
 }
 
-@key_
+@keyframes show_slide {
+  0% {
+    transform:translateX(100%);
+  }
+  40% {
+    transform:translateX(-10%);
+  }
+  80% {
+    transform:translateX(0%);
+  }
+  100% {
+    transform:translateX(-10px);
+  }
+}
 
 .close-btn:hover {
   background:#ffc766;
