@@ -800,6 +800,8 @@ h3.my-profession {
   cursor:pointer;
 }
 
+/*  */
+
 .alert {
   background:#ffdb9b;
   padding:20px 40px;
@@ -815,7 +817,42 @@ h3.my-profession {
   position:absolute;
   left:20px;
   top:50%;
-  translateY
+  transform:translateY(-50%);
+  color:#ce8500;
+  font-size:30px;
+  overflown:hidden;
+}
+
+.alert .msg {
+  padding:0 20px;
+  font-size:18px;
+  color:#ce8500;
+}
+
+.alert .close-btn {
+  background:#ffd080;
+  padding:20px 18px;
+  position:absolute;
+  transform:translateY(-50%);
+  right:0px;
+  top:50%;
+  cursor:pointer;
+}
+
+.alert.show {
+  animation:show_slide 1s ease forwards;
+}
+
+@key_
+
+.close-btn:hover {
+  background:#ffc766;
+} 
+
+.close-btn .fa-times {
+  color:#ce8500;
+  font-size:22px;
+  line-height:40px;
 }
 
 /* ---- MEDIA QUERYS ----*/
