@@ -117,8 +117,8 @@ function sendMail() {
 }
 
 /*
-const open = document.getElementById("open");
-const modal_container = document.getElementById("modal_container");
+const open = document.getElementById("send-msg");
+const modal_container = document.getElementById("modal-container");
 const close = document.getElementById("close");
 
 open.addEventListener("click", () => {
