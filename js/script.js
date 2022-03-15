@@ -97,12 +97,23 @@ function sendMail() {
      message : document.getElementById("formMessage").value
   }
   
-  if(params === 'undefined' || params === null) {
-    alert('please fill in');
+  if(!params.email_id || params.email_id === null) {
+    return alert("Please email");
+  }
+  if(!params.message || params.message === null) {
+    return alert("Please message");
   } else {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
       .then(function(res) {
         alert("Thank you!");
+        function reset() {
+          var params = {
+     from_name : document.getElementById("formName").value,
+     email_id : document.getElementById("formEmail").value,
+     subject : document.getElementById("formSubject").value,
+     message : document.getElementById("formMessage").value
+  }
+        }
         return console.log(res.status);
 
     });
