@@ -99,8 +99,11 @@ function sendMail() {
 
   const inputs = document.querySelectorAll('input, textarea');
   
+  const msgError = document.getElementById("msg-error");
+  const msgOk = document.getElementById("msg-ok");
+  
   if(!params.email_id || params.email_id === null) {
-    return alert("Please email");
+    msgError.
   }
   if(!params.message || params.message === null) {
     return alert("Please message");
