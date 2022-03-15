@@ -800,6 +800,12 @@ h3.my-profession {
   cursor:pointer;
 }
 
+.alert {
+  background: #ffdb9b;
+}
+
+/* ---- MEDIA QUERYS ----*/
+
 @media (max-width:1199px) {
   .section .container {
     padding-top:70px;

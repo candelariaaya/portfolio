@@ -97,7 +97,7 @@ function sendMail() {
      message : document.getElementById("formMessage").value
   }
   
-  const inputs = document.querySelectorAll('#formName, #formEmail, #formSubject, #formMessage');
+  const inputs = document.querySelectorAll('input, textarea');
   
   if(!params.email_id || params.email_id === null) {
     return alert("Please email");
