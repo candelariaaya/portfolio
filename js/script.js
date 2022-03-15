@@ -82,7 +82,11 @@ navTogglerBtn.addEventListener("click", () => {
 function asideSectionTogglerBtn() {
   aside.classList.toggle("open");
   navTogglerBtn.classList.toggle("open");
-  for(i=0; i<totalSection; i++) {
+  for(let i=0; i<totalSection; i++) {
     allSection[i].classList.toggle("open")
   }
 }
+
+
+//EmailJS
+function sendMail()
