@@ -804,12 +804,29 @@ h3.my-profession {
 /* Alert Message - Contact Form */
 
 .modal-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
   position:fixed;
   top:0;
   left:0;
   height:100vh;
   width:100vw;
   background-color:rgba(0,0,0,0.3);
+}
+
+.modal {
+  background-color:var(--bg-black-900);
+  width:600px;
+  max-width:100%;
+  padding:30px 50px;
+  border-radius:5px;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.modal h4 {
+  margin:0;
 }
 
 .modal-container .modal .fa-exclamation-circle {
@@ -822,13 +839,7 @@ h3.my-profession {
   overflown:hidden;
 }
 
-.alert .msg {
-  padding:0 20px;
-  font-size:18px;
-  color:#ce8500;
-}
-
-.alert .close-btn {
+.modal-container .modal .close-btn {
   background:#ffd080;
   padding:20px 18px;
   position:absolute;
@@ -836,25 +847,6 @@ h3.my-profession {
   right:0px;
   top:50%;
   cursor:pointer;
-}
-
-.alert.show {
-  animation:show_slide 1s ease forwards;
-}
-
-@keyframes show_slide {
-  0% {
-    transform:translateX(100%);
-  }
-  40% {
-    transform:translateX(-10%);
-  }
-  80% {
-    transform:translateX(0%);
-  }
-  100% {
-    transform:translateX(-10px);
-  }
 }
 
 .close-btn:hover {
