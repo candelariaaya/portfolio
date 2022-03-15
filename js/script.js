@@ -6,8 +6,8 @@ const typed = new Typed(".typing", {
   loop:true
 });
 
-// Aside
 
+// Aside
 const nav = document.querySelector(".nav")
 const navList = nav.querySelectorAll("li")
 const totalNavList = navList.length;
@@ -88,7 +88,7 @@ function asideSectionTogglerBtn() {
 }
 
 
-//EmailJS
+//EmailJS - Contact form
 function sendMail() {
   var params = {
      from_name : document.getElementById("formName").value,
@@ -96,10 +96,15 @@ function sendMail() {
      subject : document.getElementById("formSubject").value,
      message : document.getElementById("formMessage").value
   }
-  emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
-    .then(function(res) {
-      alert("Thank you!");
-      return console.log(res.status);
-    
-  });
+  
+  if(params === 'undefined' || params === null) {
+    alert('please fill in');
+  } else {
+    emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
+      .then(function(res) {
+        alert("Thank you!");
+        return console.log(res.status);
+
+    });
+  }
 }
