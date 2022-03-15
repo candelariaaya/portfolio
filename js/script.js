@@ -107,15 +107,10 @@ function sendMail() {
       .then(function(res) {
         alert("Thank you!");
         function reset() {
-          var params = {
-     from_name : document.getElementById("formName").value,
-     email_id : document.getElementById("formEmail").value,
-     subject : document.getElementById("formSubject").value,
-     message : document.getElementById("formMessage").value
-  }
-        }
+          params.forEach (params => {
+            params.value = '';
+          });
         return console.log(res.status);
-
     });
   }
 }
