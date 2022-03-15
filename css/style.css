@@ -681,7 +681,7 @@ h3.my-profession {
 
 .portfolio .portfolio-item {
   flex:0 0 33.33%;
-  max-width:33.33%
+  max-width:33.33%;
   margin-bottom:30px;
   padding-top:30px;
 }
@@ -804,7 +804,18 @@ h3.my-profession {
 /* ---- ALERT MSG  ---- */
 
 .alert {
-  
+  padding:10px 15px;
+  background:var(--bg-black-900);
+  flex:0 0 50%;
+  max-width:50%;
+  position:absolute;
+  text-align:center;
+  right:50px;
+  top:0;
+}
+
+.alert:hover {
+  box-shadow:0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /* ---- MEDIA QUERYS ----*/
