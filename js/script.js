@@ -96,7 +96,7 @@ function sendMail() {
      subject : document.getElementById("formSubject").value,
      message : document.getElementById("formMessage").value
   }
-  
+
   const inputs = document.querySelectorAll('input, textarea');
   
   if(!params.email_id || params.email_id === null) {
@@ -106,26 +106,12 @@ function sendMail() {
     return alert("Please message");
   } else {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
-      .then(function(res) {
-        alert("Thank you!");
-        inputs.forEach (input => {
-          input.value = '';
+      .then(function(res) {    
+      alert("Thank you!");
+      inputs.forEach (input => {
+        input.value = '';
         });
-        return console.log(res.status);
+      return console.log(res.status);
     });
   }
 }
-
-/*
-const open = document.getElementById("send-msg");
-const modal_container = document.getElementById("modal-container");
-const close = document.getElementById("close");
-
-open.addEventListener("click", () => {
-  modal_container.classList.add("show");
-})
-
-close.addEventListener("click", () => {
-  modal_container.classList.remove("show");
-})
-*/
