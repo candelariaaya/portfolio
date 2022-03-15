@@ -89,4 +89,15 @@ function asideSectionTogglerBtn() {
 
 
 //EmailJS
-function sendMail()
+function sendMail() {
+  var params = {
+     from_name : document.getElementById("formName").value,
+     email_id : document.getElementById("formEmail").value,
+     subject : document.getElementById("formSubject").value,
+     message : document.getElementById("formMessage").value
+  }
+  emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
+    .then(function(res) {
+    
+  });
+}
