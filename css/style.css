@@ -830,6 +830,11 @@ h3.my-profession {
   box-shadow:0 0 20px rgba(48, 46, 77, 0.15);
 }
 
+.alert-error .close-msg, .alert-ok .close-msg {
+  position:absolute;
+  top:0;
+}
+
 
 /* ---- MEDIA QUERYS ----*/
 

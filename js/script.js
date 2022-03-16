@@ -104,11 +104,11 @@ function sendMail() {
   
   if(!params.email_id || params.email_id === null) {
     return alertError.classList.remove("hidden");
-    closeAlert();
+    //closeAlert();
   }
   if(!params.message || params.message === null) {
     return alertError.classList.remove("hidden");
-    closeAlert();
+    //closeAlert();
   } else {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
       .then(function(res) {    
@@ -121,7 +121,7 @@ function sendMail() {
   }
 }
 
-function closeAlert() {
-  
-}
+/*function closeAlert() {
+  document.
+}*/
 
