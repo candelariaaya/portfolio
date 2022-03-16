@@ -122,6 +122,12 @@ function sendMail() {
 }
 
 /*function closeAlert() {
-  document.
-}*/
+  document.querySelector(".close-msg").addEventListener("click", () => {
+    if(document.querySelector("alert").){
+      
+    }
+      document.querySelector("alert").
+  });
+}
 
+*/

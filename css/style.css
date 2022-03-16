@@ -833,6 +833,10 @@ h3.my-profession {
 .alert-error .close-msg, .alert-ok .close-msg {
   position:absolute;
   top:0;
+  right:14px;
+  font-size:30px;
+  transform:rotate(45deg);
+  cursor:pointer;
 }
 
 
