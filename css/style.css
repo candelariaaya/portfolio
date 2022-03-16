@@ -812,6 +812,7 @@ h3.my-profession {
   top:0;
   border:1px solid var(--bg-black-50);
   border-radius:10px;
+  display:none;
 }
 
 .alert-error {
