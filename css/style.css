@@ -839,16 +839,6 @@ h3.my-profession {
   cursor:pointer;
 }
 
-/* ---- FOOTER ---- */
-footer {
-  background-color:var(--bg-black-100);
-}
-
-footer .copyright-text {
-  padding:10px 0;
-  text-align:center;
-}
-
 
 /* ---- MEDIA QUERYS ---- */
 
@@ -913,4 +903,22 @@ footer .copyright-text {
     flex:0 0 100%;
     max-width:100%;
   }
+}
+
+
+/* ---- FOOTER ---- */
+footer {
+  background-color:red;
+}
+
+footer .copyright-text {
+  padding:10px 0;
+  font-size:18px;
+  color:var(--text-black-100);
+  font-weight:300;
+  margin:10px 0 0;
+}
+
+.justify-content-center {
+  justify-content:center;
 }
