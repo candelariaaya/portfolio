@@ -116,14 +116,14 @@ function sendMail() {
   }
 }
 
-function closeAlert() {
-  document.querySelector(".close-msg").addEventListener("click", () => {
+function closeAlertE() {
+  document.querySelector(".close-msg-e").addEventListener("click", () => {
     document.getElementById("msg-error").style.display = "none";
   });
 }
 
-function closeAlert2() {
-  document.querySelector(".close-msg2").addEventListener("click", () => {
+function closeAlertOk() {
+  document.querySelector(".close-msg-ok").addEventListener("click", () => {
     document.getElementById("msg-ok").style.display = "none";
   });
 }

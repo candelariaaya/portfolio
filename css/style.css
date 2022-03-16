@@ -805,24 +805,23 @@ h3.my-profession {
 
 .alert-error, .alert-ok {
   padding:10px 15px;
-  flex:0 0 25%;
-  max-width:25%;
+  flex:0 0 30%;
+  max-width:30%;
   position:absolute;
   text-align:center;
   top:0;
   border:1px solid var(--bg-black-50);
   border-radius:10px;
   display:none;
+  right:20px;
 }
 
 .alert-error {
-  right:300px;
   background:rgba(255, 99, 71, 0.6);
   color:#FFFCFC;
 }
 
 .alert-ok {
-  right:20px;
   background:rgba(34, 221, 27, 0.4);
   color:#262826;
 }
@@ -831,7 +830,7 @@ h3.my-profession {
   box-shadow:0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.alert-error .close-msg, .alert-ok .close-msg {
+.alert-error .close-msg-e, .alert-ok .close-msg-ok {
   position:absolute;
   top:0;
   right:14px;
