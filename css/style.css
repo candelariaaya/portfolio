@@ -901,15 +901,3 @@ h3.my-profession {
     max-width:100%;
   }
 }
-
-#footer {
-  height: 200px;
-  background-color: #1d1c1e;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
