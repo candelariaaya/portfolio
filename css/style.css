@@ -901,3 +901,10 @@ h3.my-profession {
     max-width:100%;
   }
 }
+
+.footer {
+  text-align:center;
+  max-width:100%;
+  line-height:3;
+  bottom:0;
+}
