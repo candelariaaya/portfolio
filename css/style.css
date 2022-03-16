@@ -82,10 +82,6 @@ ul {
   }
 }
 
-.hidden {
-  display:none !important;
-}
-
 .padd-15 {
   padding-left:15px;
   padding-right:15px;
@@ -217,7 +213,7 @@ ul {
 .aside .logo a {
   color:var(--text-black-900);
   font-weight:700;
-  padding:15px 20px;
+  padding:10px 15px;
   font-size:30px;
   letter-spacing:5px;
   position:relative;
@@ -903,10 +899,4 @@ h3.my-profession {
     flex:0 0 100%;
     max-width:100%;
   }
-}
-
-
-/* ---- FOOTER ---- */
-.footer {
-  background:red;
 }
