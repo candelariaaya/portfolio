@@ -104,11 +104,9 @@ function sendMail() {
   
   if(!params.email_id || params.email_id === null) {
     return alertError.classList.remove("hidden");
-    //closeAlert();
   }
   if(!params.message || params.message === null) {
     return alertError.classList.remove("hidden");
-    //closeAlert();
   } else {
     emailjs.send("service_ucw4a39", "template_wsqhn6r", params)
       .then(function(res) {    
@@ -121,13 +119,8 @@ function sendMail() {
   }
 }
 
-/*function closeAlert() {
+function closeAlert() {
   document.querySelector(".close-msg").addEventListener("click", () => {
-    if(document.querySelector("alert").){
-      
-    }
-      document.querySelector("alert").
+    document.getElementById("msg-error").style.display = "none";
   });
 }
-
-*/
