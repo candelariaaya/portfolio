@@ -907,11 +907,11 @@ h3.my-profession {
 
 
 /* ---- FOOTER ---- */
-footer {
+.footer {
   background-color:red;
 }
 
-footer .copyright-text {
+.footer .copyright-text {
   padding:10px 0;
   font-size:18px;
   color:var(--text-black-100);
