@@ -907,4 +907,5 @@ h3.my-profession {
   max-width:100%;
   line-height:3;
   bottom:0;
+  color:var(--text-black-700);
 }
