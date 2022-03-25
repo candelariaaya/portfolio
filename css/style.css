@@ -910,6 +910,22 @@ h3.my-profession {
   }
 }
 
-@media (max-width:360px) {
-  .
+@media (max-width:460px) {
+  .footer {
+    flex:0 0 100%;
+    max-width:100%;
+    font-size:10px;
+  }
+}
+
+@media (max-width: 280px) {
+  .footer {
+    display:none;
+  }
+  .contact .contact-info-item {
+    max-width: 60%;
+  }
+  .about .about-content .personal-info .info-item {
+    max-width: 80%;
+  }
 }
