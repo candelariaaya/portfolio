@@ -116,6 +116,8 @@ function sendMail() {
   }
 }
 
+//Closing of popups for contact form
+
 function closeAlertE() {
   document.querySelector(".close-msg-e").addEventListener("click", () => {
     document.getElementById("msg-error").style.display = "none";
